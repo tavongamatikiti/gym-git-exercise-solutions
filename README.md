@@ -335,3 +335,176 @@ Total 1 (delta 0), reused 0 (delta 0)
 remote: To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
    4eaf515..71ab696  ft/service-redesign -> ft/service-redesign
 ```
+
+```shell
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/service-redesign]
+git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/team-page]
+touch team.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/team-page]
+git add team.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/team-page]
+git add team.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/team-page]
+git commit -m "Add team.html page with team introduction"
+
+[ft/team-page 5354b69] Add team.html page with team introduction
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+ 
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/team-page]
+git push origin ft/team-page
+
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 511 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/tavongamatikiti/gym-git-exercise-solutions/pull/new/ft/team-page
+remote: 
+To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+ 
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/team-page]
+git checkout main
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/contact-page]
+git checkout ft/team-page
+Switched to branch 'ft/team-page'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/team-page]
+git log 
+commit 5354b699267af8de8ee72273c32b60f3124af245
+Author: tavongamatikiti <tavongamatikiti@fgmail.com>
+Date:   Tue Dec 17 15:10:27 2024 +0200
+
+    Add team.html page with team introduction
+
+commit 17bf33c37b829a3a018f071046f95f55f1238f99
+Author: tavongamatikiti <tavongamatikiti@fgmail.com>
+Date:   Tue Dec 17 15:06:10 2024 +0200
+
+    Updated README for Exercise 2.2
+
+commit 6344f16c7b9156d61ce472649c76add3e5fcc7fb
+:
+commit 5354b699267af8de8ee72273c32b60f3124af245
+Author: tavongamatikiti <tavongamatikiti@fgmail.com>
+Date:   Tue Dec 17 15:10:27 2024 +0200
+
+    Add team.html page with team introduction
+
+commit 17bf33c37b829a3a018f071046f95f55f1238f99
+Author: tavongamatikiti <tavongamatikiti@fgmail.com>
+Date:   Tue Dec 17 15:06:10 2024 +0200
+
+    Updated README for Exercise 2.2
+
+commit 6344f16c7b9156d61ce472649c76add3e5fcc7fb
+
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/team-page]
+git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/contact-page]
+git cherry-pick 5354b699267af8de8ee72273c32b60f3124af245
+[ft/contact-page 4a5ee7f] Add team.html page with team introduction
+ Date: Tue Dec 17 15:10:27 2024 +0200
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/contact-page]
+git add contact.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/contact-page]
+git commit -m "Added contact.html page with contact details"
+[ft/contact-page ed47fdb] Added contact.html page with contact details
+ 1 file changed, 13 insertions(+)
+ create mode 100644 contact.html
+ 
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/contact-page]
+git push origin ft/contact-page
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.00 KiB | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote: 
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/tavongamatikiti/gym-git-exercise-solutions/pull/new/ft/contact-page
+remote: 
+To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+ 
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/contact-page]
+git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/faq-page]
+touch faq.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/faq-page]
+git add faq.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/faq-page]
+git commit -m "Add faq.html with FAQ content"
+
+[ft/faq-page d63ee06] Add faq.html with FAQ content
+ 1 file changed, 15 insertions(+)
+ create mode 100644 faq.html
+ 
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/faq-page]
+git push origin ft/faq-page
+
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 534 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/tavongamatikiti/gym-git-exercise-solutions/pull/new/ft/faq-page
+remote: 
+To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+ 
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/faq-page]
+git checkout ft/team-page
+
+Switched to branch 'ft/team-page'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/team-page]
+git revert 5354b699267af8de8ee72273c32b60f3124af245
+[ft/team-page db99423] Revert "Add team.html page with team introduction"
+ 1 file changed, 12 deletions(-)
+ delete mode 100644 team.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/team-page]
+git push origin ft/team-page
+
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 267 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
+   5354b69..db99423  ft/team-page -> ft/team-page
+```

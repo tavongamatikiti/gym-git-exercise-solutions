@@ -219,3 +219,119 @@ git commit -m "Add services.html page with initial content"
  1 file changed, 12 insertions(+)
  create mode 100644 services.html
 ```
+
+## Exercise 2
+
+```shell
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/bundle-2]
+git checkout main
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), done.
+From https://github.com/tavongamatikiti/gym-git-exercise-solutions
+ * branch            main       -> FETCH_HEAD
+   a498b2a..19d98ac  main       -> origin/main
+Updating a498b2a..19d98ac
+Fast-forward
+ README.md     | 34 ++++++++++++++++++++++++++++++++--
+ services.html | 12 ++++++++++++
+ 2 files changed, 44 insertions(+), 2 deletions(-)
+ create mode 100644 services.html
+ 
+ ~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git checkout -b ft/service-redesign
+M       README.md
+Switched to a new branch 'ft/service-redesign'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/service-redesign]
+git add services.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/service-redesign]
+git commit -m 'Added tagline on line 11'
+[ft/service-redesign 4eaf515] Added tagline on line 11
+ 1 file changed, 1 insertion(+)
+ 
+ ~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/service-redesign]
+git push --set-upstream origin ft/service-redesign
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 370 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/tavongamatikiti/gym-git-exercise-solutions/pull/new/ft/service-redesign
+remote: 
+To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+Branch ft/service-redesign set up to track remote branch ft/service-redesign from origin.
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/service-redesign]
+git checkout main
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git add services.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git commit -m 'Added p tag on line 11'
+[main 1e37b4f] Added p tag on line 11
+ 1 file changed, 1 insertion(+)
+ 
+ ~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git push origin main
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 606 bytes | 0 bytes/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
+   19d98ac..38c4943  main -> main
+   
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up-to-date with 'origin/ft/service-redesign'.
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/service-redesign]
+git diff main
+
+diff --git a/services.html b/services.html
+index db0e9ca..6794ba4 100644
+--- a/services.html
++++ b/services.html
+@@ -8,6 +8,6 @@
+ <body>
+     <h1>Our Services</h1>
+     <p>Welcome to our services page. We offer a range of professional solutions tailored to your needs.</p>
+-    <p>Welcome to our services page. Check out the changes!</p>
++    <p>We will be showing you list of what we offer to our customers</p>
+ </body>
+ </html>
+ 
+ ~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/service-redesign]
+git merge main
+
+Updating 71ab696..6344f16
+Fast-forward
+ services.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/service-redesign]
+git push origin ft/service-redesign
+Counting objects: 1, done.
+Writing objects: 100% (1/1), 243 bytes | 0 bytes/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+remote: To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
+   4eaf515..71ab696  ft/service-redesign -> ft/service-redesign
+```

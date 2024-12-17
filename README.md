@@ -41,5 +41,25 @@ Total 5 (delta 0), reused 0 (delta 0)
 remote: To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
  * [new branch]      main -> main
 Branch main set up to track remote branch main from origin.
-```
 
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git checkout -b dev
+
+Switched to a new branch 'dev'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git checkout -b test
+
+Switched to a new branch 'test'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[test]
+git checkout dev
+
+M       README.md
+Switched to branch 'dev'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git branch -d test
+
+Deleted branch test (was 447456c).
+```

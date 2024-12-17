@@ -138,4 +138,54 @@ Changes not staged for commit:
         modified:   README.md
 
 Dropped stash@{1} (a0be03e101fb93a788e9d76f75ec92ee4d516ee9)
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git commit -m 'Created home.html, about.html and modified README.md for Exercise 2'
+[dev 4ab0aa3] Created home.html, about.html and modified README.md for Exercise 2
+ 2 files changed, 19 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ 
+ ~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git push
+fatal: The current branch dev has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin dev
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+ git push --set-upstream origin dev
+Counting objects: 7, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 942 bytes | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/tavongamatikiti/gym-git-exercise-solutions/pull/new/dev
+remote: 
+To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
+ * [new branch]      dev -> dev
+Branch dev set up to track remote branch dev from origin.
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git stash list
+ 
+stash@{0}: On dev: Stash: Added team.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git stash pop stash@{0}
+On branch dev
+Your branch is up-to-date with 'origin/dev'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   team.html
+
+Dropped stash@{0} (5222d0d641b70f122cc91a6e444069a48f8a892d)
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git reset --hard HEAD
+HEAD is now at 4ab0aa3 Created home.html, about.html and modified README.md for Exercise 2
 ```

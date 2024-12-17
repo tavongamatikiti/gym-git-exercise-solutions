@@ -584,3 +584,52 @@ remote:
 To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 ```
+
+# Bundle 4
+
+## Exercise 1
+
+```shell
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/home-page-redesign]
+git checkout main
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git remote add git-copy https://github.com/tavongamatikiti/git-exercise-clone.git
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git remote
+git-copy
+origin
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git add index.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git commit -m 'New line on 51'
+[main 6bfc680] New line on 51
+ 1 file changed, 1 insertion(+)
+ 
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git push origin main
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 289 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
+   5bde690..6bfc680  main -> main
+   
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git push git-copy
+Counting objects: 53, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (51/51), done.
+Writing objects: 100% (53/53), 10.16 KiB | 0 bytes/s, done.
+Total 53 (delta 20), reused 0 (delta 0)
+remote: Resolving deltas: 100% (20/20), done.
+To https://github.com/tavongamatikiti/git-exercise-clone.git
+ * [new branch]      main -> main
+```

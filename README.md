@@ -63,3 +63,79 @@ git branch -d test
 
 Deleted branch test (was 447456c).
 ```
+# Exercise 2
+
+```shell
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+touch home.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git add home.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git stash save "Stash: home.html"
+
+Saved working directory and index state On dev: Stash: home.html
+HEAD is now at b74be49 Added dev branch and deleted test branch
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+touch about.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git add about.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git stash save "Stash: about.html"
+Saved working directory and index state On dev: Stash: about.html
+HEAD is now at b74be49 Added dev branch and deleted test branch
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+touch team.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git add team.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git stash save "Stash: Added team.html"
+Saved working directory and index state On dev: Stash: Added team.html
+HEAD is now at b74be49 Added dev branch and deleted test branch
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git stash list
+
+stash@{0}: On dev: Stash: Added team.html
+stash@{1}: On dev: Stash: about.html
+stash@{2}: On dev: Stash: home.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git stash pop stash@{1}
+On branch dev
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   about.html
+
+Dropped stash@{1} (58f45b50492000c31f0a90935a4e06dd8186bb5d)
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git stash list
+stash@{0}: On dev: Stash: Added team.html
+stash@{1}: On dev: Stash: home.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git stash pop stash@{1}
+On branch dev
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   about.html
+        new file:   home.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+Dropped stash@{1} (a0be03e101fb93a788e9d76f75ec92ee4d516ee9)
+```

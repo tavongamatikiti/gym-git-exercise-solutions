@@ -633,3 +633,45 @@ remote: Resolving deltas: 100% (20/20), done.
 To https://github.com/tavongamatikiti/git-exercise-clone.git
  * [new branch]      main -> main
 ```
+## Exercise 2
+
+```shell
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/footer]
+touch footer.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/footer]
+git add footer.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/footer]
+git commit -m 'Added footer.html'
+[ft/footer edf2553] Added footer.html
+ 1 file changed, 70 insertions(+)
+ create mode 100644 footer.html
+ 
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/footer]
+git add footer.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/footer]
+git commit -m 'Edited footer.html'
+[ft/footer e0ae948] Edited footer.html
+ 1 file changed, 16 insertions(+), 3 deletions(-)
+ 
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/footer]
+git push origin ft/footer
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.26 KiB | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/tavongamatikiti/gym-git-exercise-solutions/pull/new/ft/footer
+remote: 
+To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
+ * [new branch]      ft/footer -> ft/footer
+```

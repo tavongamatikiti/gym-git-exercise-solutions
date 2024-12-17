@@ -1,6 +1,8 @@
 # Gym Git Exercise Solutions
 
-# Exercise 1
+# Bundle 1
+
+## Exercise 1
 
 ```shell
 ~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[master]
@@ -63,7 +65,7 @@ git branch -d test
 
 Deleted branch test (was 447456c).
 ```
-# Exercise 2
+## Exercise 2
 
 ```shell
 ~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
@@ -188,4 +190,32 @@ Dropped stash@{0} (5222d0d641b70f122cc91a6e444069a48f8a892d)
 ~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
 git reset --hard HEAD
 HEAD is now at 4ab0aa3 Created home.html, about.html and modified README.md for Exercise 2
+```
+
+# Bundle 2
+
+## Exercise 1
+
+```shell
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[dev]
+git checkout main
+
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/bundle-2]
+touch services.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/bundle-2]
+git add services.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/bundle-2]
+git commit -m "Add services.html page with initial content"
+[ft/bundle-2 7116044] Add services.html page with initial content
+ 1 file changed, 12 insertions(+)
+ create mode 100644 services.html
 ```

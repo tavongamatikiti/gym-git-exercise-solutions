@@ -512,3 +512,75 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
    5354b69..db99423  ft/team-page -> ft/team-page
 ```
+---
+
+## Exercise 2
+
+```shell
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/faq-page]
+git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/home-page-redesign]
+git checkout main
+
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+touch index.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git add index.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git commit -m 'Added home page content on main branch'
+[main caec639] Added home page content on main branch
+ 1 file changed, 58 insertions(+)
+ create mode 100644 index.html
+ 
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 976 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
+   2352188..caec639  main -> main
+   
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[main]
+git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/home-page-redesign]
+git rebase origin/main
+
+First, rewinding head to replay your work on top of it...
+Applying: Add team.html page with team introduction
+Applying: Added contact.html page with contact details
+Applying: Add faq.html with FAQ content
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/home-page-redesign]
+git add index.html
+
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/home-page-redesign]
+git commit -m 'Added new line on 51'
+[ft/home-page-redesign 2f396f1] Added new line on 51
+ 1 file changed, 1 insertion(+)
+ 
+~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/home-page-redesign]
+git push origin ft/home-page-redesign
+Counting objects: 12, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.77 KiB | 0 bytes/s, done.
+Total 12 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/tavongamatikiti/gym-git-exercise-solutions/pull/new/ft/home-page-redesign
+remote: 
+To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+```

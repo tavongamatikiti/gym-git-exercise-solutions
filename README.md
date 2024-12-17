@@ -336,6 +336,10 @@ remote: To https://github.com/tavongamatikiti/gym-git-exercise-solutions.git
    4eaf515..71ab696  ft/service-redesign -> ft/service-redesign
 ```
 
+# Bundle 3
+
+## Exercise 1
+
 ```shell
 ~/IdeaProjects/the-gym/gym-git-exercise-solutions git:[ft/service-redesign]
 git checkout -b ft/team-page

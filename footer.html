@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1; /* Pushes the footer to the bottom */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        footer .footer-links,
+        footer .social-media {
+            margin: 0.5em 0;
+        }
+
+        footer .footer-links a,
+        footer .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 0.9em;
+        }
+
+        footer .footer-links a:hover,
+        footer .social-media a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            font-size: 0.8em;
+            margin-top: 0.5em;
+        }
+
+        footer .social-media a i {
+            margin-right: 0.5em;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <!-- Main content of the page -->
+    <h1 style="text-align: center; margin: 2em 0;">Welcome to Our Website</h1>
+    <p style="text-align: center;">Explore the content and enjoy the experience!</p>
+</div>
+
+<footer>
+    <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="social-media">
+        <a href="#"><i>🌐</i> Website</a>
+        <a href="#"><i>📘</i> Facebook</a>
+        <a href="#"><i>🐦</i> Twitter</a>
+        <a href="#"><i>📷</i> Instagram</a>
+    </div>
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+</body>
+</html>
